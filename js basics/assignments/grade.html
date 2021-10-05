@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mygrade(score){
+            var gscore=0;
+            switch(true){
+                case (score <= 100 && score >= 80):
+       gscore = 'Distinction';
+        break;
+    case (score <= 80 && score >= 50):
+        gscore = 'First class';
+         break;
+    case (score <= 50 && score >= 35):
+        gscore = 'Pass';
+         break;
+    case (score > 100 && score < 0):
+        gscore = 'INVALID SCORE';
+        break; 
+    default:
+      return 'INVALID SCORE';
+}
+
+  return gscore;
+}
+console.log(mygrade(0));
+            
+
+        
+    </script>
+</body>
+</html>

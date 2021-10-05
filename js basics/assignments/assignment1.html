@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="indec.css">
+	</head>
+
+	<body>
+		
+		<h1>Increment and Decrement counter</h1>
+
+		
+
+
+        <table border="1px" class ="container">
+			
+
+                
+            <th colspan="3">  <h2 id="counting"></h2></th>
+            <tr>
+			<td><button onclick="increment()">+</button></td>
+          <td><button type="reset" onclick="restet()">reset</button></td>
+           <td><button onclick="decrement()">-</button></td>
+        </tr>
+		</thead>
+			
+		</table>
+
+
+	
+		<script>
+			
+			var data = 0;
+
+			
+			document.getElementById("counting").innerText = data;
+
+		
+			function increment() {
+				data = data + 1;
+				document.getElementById("counting").innerText = data;
+			}
+		
+			function decrement() {
+                if(data>0){
+				data = data - 1
+				document.getElementById("counting").innerText = data;
+                }
+			}
+
+
+            function restet() {
+				data = 0
+				document.getElementById("counting").innerText = data;
+			}
+		</script>
+	</body>
+</html>
